@@ -1,6 +1,6 @@
 <?php
  
-$strAccessToken = "ACCESS_TOKEN";
+$strAccessToken = "xjGIR1MZNjzmCI9qagfTX7ksvvmLJYmOZZfCaAvY52kld2Hm4SeDJtzRv31ZDyIum31zNpHaY6lIWJ0LRzIqnxsgrBt0a+dKb56qqBmOlDtKyONakxR1kk6ADFzu3Ko5WWqxfhMcufHu3ldcWEhREAdB04t89/1O/w1cDnyilFU=";
  
 $content = file_get_contents('php://input');
 $arrJson = json_decode($content, true);
@@ -44,5 +44,7 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER,true);
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 $result = curl_exec($ch);
 curl_close ($ch);
+
+echo "hiii";
  
 ?>
